@@ -1,0 +1,44 @@
+.container {
+	width: 110px;
+	height: 110px;
+	background-color: #DE574B;
+    padding: 20px;
+	position: relative;
+}
+
+.line {
+    width: 100%;
+    height: 6px;
+    background-color: #fff;
+}
+
+.line:last-child {
+    margin-top: 32px;
+    -webkit-animation: line3 500ms ease-in 1 forwards;
+    
+} 
+
+.line:nth-child(2) {
+    margin-top: 32px;
+    -webkit-animation: line2 500ms ease-in 1 forwards;
+}
+
+.line:first-child {
+    margin-top: 14px;
+    -webkit-animation: line1 500ms ease-in 1 forwards;
+}
+
+@-webkit-keyframes line1 {
+    from {width: 100%; -webkit-transform: rotate(0deg);}
+    to {width: 60%; -webkit-transform: rotate(-45deg); margin-left: 2px; margin-top: 25px;}
+}
+
+@-webkit-keyframes line2 {
+    from {width: 100%; -webkit-transform: rotate(0deg); margin-top: 32px;}
+    to {width: 60%; -webkit-transform: rotate(45deg); margin-top: -6px; margin-left: 46px;}
+}
+
+@-webkit-keyframes line3 {
+    from {width: 100%;}
+    to {width: 80%; margin: 0 auto; margin-top: 60px;}
+}
